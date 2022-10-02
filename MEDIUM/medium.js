@@ -1,3 +1,9 @@
+function cutPizzaSlices(x) {
+  return function sharePizza(y) {
+    return `Each person gets ${x / y} slices of pizza`;
+  };
+}
+
 var sharePizza = cutPizzaSlices(8);
 console.log(sharePizza(2));
 // prints "Each person gets 4.00 slices of pizza"
